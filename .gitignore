@@ -1,0 +1,27 @@
+# --- secrets (NEVER commit) ---
+.env
+*.env
+!.env.example
+
+# --- python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# --- node / frontend build ---
+node_modules/
+dist/
+
+# --- runtime data ---
+backend/data/
+
+# --- raw art library (CraftPix source; curated sprites are copied into
+#     frontend/public/ which IS committed). Re-downloadable from CraftPix. ---
+asset_pack/
+
+# --- misc ---
+.DS_Store
+Thumbs.db
+*.log
